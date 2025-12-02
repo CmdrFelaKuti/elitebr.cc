@@ -1,23 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Salão da Elite - Elite BR</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Elite BR — Comunidade</title>
     <link rel="stylesheet" href="stynavbar.css">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .navbar {
+            background: #ff7a00; /* barra laranja */
+            padding: 15px;
+            border-bottom: 2px solid #0d0d0d; /* opcional, contraste */
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        .navbar a {
+            color: #000000; /* links pretos */
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .navbar a:hover {
+            color: #ffffff; /* hover branco */
+        }
+    </style>
 </head>
+ 
 <body>
-
-    <h1>Salão da Elite</h1>
-    <p>Aqui celebramos os comandantes mais ativos, úteis e lendários da comunidade Elite BR.</p>
-
-    <section>
-        <h2>Comandantes em Destaque</h2>
+    <nav class="navbar">
         <ul>
-            <li>CMDR Exemplo — Exploração</li>
-            <li>CMDR Outro — Combate</li>
-            <li>CMDR Teste — Logística</li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="salao-da-elite.html">Salão da Elite</a></li>
+            <li><a href="ferramentas-uteis.html">Ferramentas Úteis</a></li>
+            <li><a href="biblioteca.html">Biblioteca Elite BR</a></li>
         </ul>
+     </nav>
+    <header>
+        <img src="logo.png" alt="Logo Elite BR" class="logo">
+
+        <h1>Elite BR</h1>
+        <p class="slogan">Comunidade Brasileira sobre Elite Dangerous</p>
+
+        <a href="https://discord.gg/elitebr" class="cta">
+            <img src="discord.png" class="discord-icon" alt="">
+            Entrar no Discord
+        </a>
+    </header>
+
+    <section class="coming-soon">
+        <h2>Mais novidades em breve</h2>
     </section>
+
+    <footer>
+    <p>
+        Website não oficial e sem fins comerciais da comunidade brasileira de 
+        <a href="https://www.elitedangerous.com" target="_blank" rel="noopener noreferrer">Elite Dangerous</a>.
+        <br>
+        <a href="https://www.elitedangerous.com" target="_blank" rel="noopener noreferrer">Elite Dangerous</a> is a registered trademark of 
+        <a href="https://www.frontier.co.uk" target="_blank" rel="noopener noreferrer">Frontier Developments</a>.
+        This is an unofficial, non-commercial fan community website.
+    </p>
+</footer>
+
+<style>
+    footer a {
+        color: #ff7a00;       /* cor laranja Elite BR */
+        text-decoration: none; /* remove sublinhado */
+        font-weight: bold;    /* opcional, deixa mais visível */
+    }
+
+    footer a:hover {
+        color: #ffffff;       /* muda a cor ao passar o mouse */
+    }
+</style>
+
 
 </body>
 </html>
