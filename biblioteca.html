@@ -4,14 +4,18 @@
     <link rel="icon" type="image/png" href="logo.png">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Elite BR — Comunidade</title>
+    <title>Elite BR — Comunidade</title>
+
+    <!-- CSS externo -->
     <link rel="stylesheet" href="stynavbar.css">
     <link rel="stylesheet" href="styles.css" />
+
     <style>
+        /* Navbar */
         .navbar {
-            background: #ff7a00; /* barra laranja */
+            background: #ff7a00; 
             padding: 15px;
-            border-bottom: 2px solid #0d0d0d; /* opcional, contraste */
+            border-bottom: 2px solid #0d0d0d;
             font-family: Arial, sans-serif;
         }
 
@@ -24,7 +28,7 @@
         }
 
         .navbar a {
-            color: #000000; /* links pretos */
+            color: #000000; 
             text-decoration: none;
             font-size: 1.1rem;
             font-weight: bold;
@@ -32,59 +36,50 @@
         }
 
         .navbar a:hover {
-            color: #ffffff; /* hover branco */
+            color: #ffffff; 
         }
-    </style>
-</head>
- 
-<body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="quem-somos.html">Quem Somos</a></li>
-            <li><a href="salao-da-elite.html">Salão da Elite</a></li>
-            <li><a href="ferramentas-uteis.html">Ferramentas Úteis</a></li>
-            <li><a href="biblioteca.html">Biblioteca Elite BR</a></li>
-        </ul>
-     </nav>
-    <header>
-        <img src="logo.png" alt="Logo Elite BR" class="logo">
 
-        <h1>Elite BR</h1>
-        <p class="slogan">Comunidade Brasileira sobre Elite Dangerous</p>
+        /* Header */
+        .site-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #0d0d0d;
+            color: #ffffff;
+            flex-wrap: wrap;
+        }
 
-        <a href="https://discord.gg/elitebr" class="cta">
-            <img src="discord.png" class="discord-icon" alt="">
-            Entrar no Discord
-        </a>
-    </header>
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
 
-    <section class="coming-soon">
-        <h2>Mais novidades em breve</h2>
-    </section>
+        .logo {
+            height: 60px;
+        }
 
-    <footer>
-    <p>
-        Website não oficial e sem fins comerciais da comunidade brasileira de 
-        <a href="https://www.elitedangerous.com" target="_blank" rel="noopener noreferrer">Elite Dangerous</a>.
-        <br>
-        <a href="https://www.elitedangerous.com" target="_blank" rel="noopener noreferrer">Elite Dangerous</a> is a registered trademark of 
-        <a href="https://www.frontier.co.uk" target="_blank" rel="noopener noreferrer">Frontier Developments</a>.
-        This is an unofficial, non-commercial fan community website.
-    </p>
-</footer>
+        .site-info h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #ff7a00;
+        }
 
-<style>
-    footer a {
-        color: #ff7a00;       /* cor laranja Elite BR */
-        text-decoration: none; /* remove sublinhado */
-        font-weight: bold;    /* opcional, deixa mais visível */
-    }
+        .site-info .slogan {
+            margin: 0;
+            font-size: 1rem;
+            color: #ffffff;
+        }
 
-    footer a:hover {
-        color: #ffffff;       /* muda a cor ao passar o mouse */
-    }
-</style>
-
-
-</body>
-</html>
+        .header-right .cta {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #ff7a00;
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transi
