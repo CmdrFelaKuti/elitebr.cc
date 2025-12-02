@@ -24,3 +24,6 @@
 .navbar a:hover {
     color: #ffffff;
 }
+.navbar {
+    background: orange; /* temporário */
+}
